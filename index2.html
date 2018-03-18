@@ -1,0 +1,134 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Desafío LATAM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+<body>
+
+<div class="parallax-container">
+  <header>
+    <div class="header-container">
+      <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </button>
+            <h1><a href="#">Desafío LATAM</a></h1>
+        </div>
+        <div class="collapse navbar-collapse" id="top-navbar-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Equipo</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header-text">
+        <h2>Comienza una nueva vida y <br>únete al mundo<br>tecnológico</h2>
+        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#requestInfoModal">Comienza aca!</a>
+        <a href="#" class="btn btn-success" data-toggle="modal" data-target="#requestInfoModal">Más info</a>
+        <p>Hay una escasez gigante de desarrolladores en el mundo y más aún en Latinoamérica, se necesitan más desarrolladores y TÚ puedes ser uno!</p>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-container">
+      <h3>El Bootcamp de programación más grande de Latinoamérica</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sagittis nisl. Nulla vel tempus ante. Aenean sollicitudin ornare neque, ac facilisis est. Nullam fringilla blandit lacus, non sagittis felis dignissim.</p>
+      <img src="images/viewing-gallery-for-happy-people.png" class="img img-responsive people">
+    </div>
+  </section>
+
+
+  <section>
+    <div class="section-container">
+      <h3>Solicita información e inscríbete</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sagittis nisl. Nulla vel tempus ante. Aenean sollicitudin ornare neque, ac facilisis est. Nullam fringilla blandit lacus, non sagittis felis dignissim.</p>
+      <p><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#requestInfoModal">Inscríbete!</a></p>
+      <p>Vive la experiencia Desafío LATAM!</p>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="section-container">
+      <div class="row">
+        <div class="col-md-5">
+          <h4>Contacto</h4>
+          <strong>Desafío Latam</strong><br>
+          <p>Ezequías Alliende 2316<br>
+          Providencia, Santiago RM<br>
+          Fono: +569 5117 7975</p>
+          <p><a href="mailto:inscripciones@desafiolatam.com">inscripciones@desafiolatam.com</a></p>
+        </div>
+        <div class="col-md-7">
+          <h4>Suscríbete</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <form action="" method="post" id="fs_suscribe" class="form-inline">
+            <input type="email" class="form-control" name="fs_email" id="fs_email" placeholder="Ingresa tu correo electrónico" />
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-container">
+      <p>Desafiolatam 2016 - Curso FullStack G5</p>
+    </div>
+  </footer>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="requestInfoModal" tabindex="-1" role="dialog" aria-labelledby="requestInfoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Solicita información acerca de <strong>&lt;Desafío Latam&gt;</strong></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="rq_name" class="col-form-label">Nombre:</label>
+              <input type="text" class="form-control" name="rq_name" id="rq_name" placeholder="Ingresa tu nombre y apellidos">
+            </div>
+            <div class="form-group">
+              <label for="rq_email" class="col-form-label">E-Mail:</label>
+              <input type="email" class="form-control" name="rq_email" id="rq_email" placeholder="Ingresa tu correo electrónico" />
+            </div>
+            <div class="form-group">
+              <label for="rq_message" class="col-form-label">Consulta:</label>
+              <textarea class="form-control" name="rq_message" id="rq_message" rows="6" placeholder="Escribe aquí tu consulta"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Enviar Consulta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function(){
+   //...
+  });
+</script>
+</body>
+</html>
