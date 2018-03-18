@@ -1,0 +1,105 @@
+
+/* Media Queries ------ */
+
+@media only screen and (max-width: 1152px){
+	header .header-container,
+	section .section-container,
+	footer > div.footer-container {
+		width: 95% !important;	
+	}
+}
+
+@media only screen and (max-width: 991px){
+	section:nth-of-type(3) > .section-container > .row {
+		width: 100% !important;
+	}
+	section:nth-of-type(3) > .section-container > .row > div {
+		text-align: center !important;
+	}
+}
+
+@media only screen and (max-width: 920px){
+	.header-container > nav h1 {
+		margin-bottom: 20px;
+	}
+	.header-container > .header-text > h2 {
+	    font-size: 36px !important;
+	}
+	.header-container > .header-text > p {
+		margin-bottom: 30px !important;
+	}
+	.parallax-container { 
+	    height: 415px !important;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.header-container > nav h1 > a {
+		width: 130px !important;
+		height: 36px !important;
+	}
+	.header-container > nav > div.navbar-collapse {
+		width: 100% !important;
+		background-color: #111111 !important;
+		right: 0px !important;
+	}
+	.header-container > nav > div.navbar-collapse > ul {
+		width: 100% !important;
+		margin: 10px auto 100% auto !important;
+	}
+	.header-container > nav > div.navbar-collapse > ul > li {
+		text-align: center !important;
+	}
+	.header-container > nav > div.navbar-collapse > ul > li > a {
+		border-bottom: 1px dotted #222222 !important;
+	}
+}
+
+@media only screen and (max-width: 680px){
+	.header-container > nav {
+		margin-bottom: 20px !important;
+	}
+	.header-container > .header-text {
+	    width: 100% !important;
+	}
+	.header-container > .header-text > h2 {
+	    font-size: 100% !important;
+	    width: 100% !important;
+	}
+	.parallax-container { 
+	    height: 318px !important;
+	}
+}
+
+@media only screen and (max-width: 420px){
+	.header-container > .header-text > h2 {
+	    font-size: 18px !important;
+	}
+	.header-container > .header-text > p {
+	    margin-bottom: 20px !important;
+	}
+}
+
+
+/* Orientation ------ */
+
+@media all and (orientation: portrait) {
+	body, html, * {
+	    font-size: 110% !important;
+	}
+	.header-container > .header-text > h2 {
+	    font-size: 185% !important;
+	}
+	.parallax-container { 
+	    height: 550px !important;
+	}
+}
+
+@media all and (orientation: landscape) {
+	/* */
+}
+
+
+
+
+

@@ -1,0 +1,318 @@
+/* Importar fuentes ------ */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+/* Media Queries ------ */
+@media only screen and (max-width: 1152px) {
+  header .header-container,
+  section .section-container,
+  footer > div.footer-container {
+    width: 95% !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  section:nth-of-type(3) > .section-container > .row {
+    width: 100% !important;
+  }
+  section:nth-of-type(3) > .section-container > .row > div {
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .header-container > nav h1 {
+    margin-bottom: 20px;
+  }
+  .header-container > .header-text > h2 {
+    font-size: 36px !important;
+  }
+  .header-container > .header-text > p {
+    margin-bottom: 30px !important;
+  }
+  .parallax-container {
+    height: 415px !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header-container > nav h1 > a {
+    width: 130px !important;
+    height: 36px !important;
+  }
+  .header-container > nav > div.navbar-collapse {
+    width: 100% !important;
+    background-color: #111111 !important;
+    right: 0px !important;
+  }
+  .header-container > nav > div.navbar-collapse > ul {
+    width: 100% !important;
+    margin: 10px auto 100% auto !important;
+  }
+  .header-container > nav > div.navbar-collapse > ul > li {
+    text-align: center !important;
+  }
+  .header-container > nav > div.navbar-collapse > ul > li > a {
+    border-bottom: 1px dotted #222222 !important;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .header-container > nav {
+    margin-bottom: 20px !important;
+  }
+  .header-container > .header-text {
+    width: 100% !important;
+  }
+  .header-container > .header-text > h2 {
+    font-size: 100% !important;
+    width: 100% !important;
+  }
+  .parallax-container {
+    height: 318px !important;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .header-container > .header-text > h2 {
+    font-size: 18px !important;
+  }
+  .header-container > .header-text > p {
+    margin-bottom: 20px !important;
+  }
+}
+/* Orientation ------ */
+@media all and (orientation: portrait) {
+  body,
+  html,
+  * {
+    font-size: 110% !important;
+  }
+  .header-container > .header-text > h2 {
+    font-size: 185% !important;
+  }
+  .parallax-container {
+    height: 550px !important;
+  }
+}
+@media all and (orientation: landscape) {
+  /* */
+}
+/* Estructura ------ */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 100% !important;
+}
+.parallax-container {
+  background-image: url('../images/bg.jpeg');
+  height: 460px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Cabecera ------ */
+header {
+  /*background: url('../images/bg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+  display: block;
+}
+.header-container {
+  padding-top: 40px;
+  overflow: auto;
+}
+.header-container > nav {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  transition: all .6s;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+.header-container > nav h1 {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+}
+.header-container > nav h1 > a {
+  background-image: url('../images/latam_logo.png');
+  background-size: cover;
+  text-indent: -999999px;
+  display: block;
+  width: 170px !important;
+  height: 47px !important;
+}
+.header-container > nav > div.navbar-collapse {
+  position: absolute;
+  right: 0;
+}
+.header-container > nav > div.navbar-collapse > ul {
+  display: inline-block;
+  float: right !important;
+}
+.header-container > nav > div.navbar-collapse > ul > li > a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 85% !important;
+  text-transform: uppercase;
+}
+.header-container > nav ul > li.active > a {
+  background-color: transparent !important;
+  color: #59B02E !important;
+}
+.header-container > nav .navbar-toggle {
+  border-color: #CCCCCC !important;
+  padding-top: 8px !important;
+  padding-right: 9px !important;
+  padding-bottom: 6px !important;
+  padding-left: 8px !important;
+  margin: 0px 0px 6px 0px !important;
+}
+.header-container > nav span.glyphicon-menu-hamburger {
+  font-size: 22px;
+  color: #FFFFFF;
+}
+.header-container > .header-text {
+  margin: 0px auto 0 auto !important;
+  text-align: center;
+  width: 660px;
+}
+.header-container > .header-text > * {
+  text-shadow: 0px 1px 27px rgba(0, 0, 0, 0.6);
+}
+.header-container > .header-text > h2,
+.header-container > .header-text > p {
+  color: #FFFFFF;
+}
+.header-container > .header-text > h2 {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.3em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.header-container > .header-text > a.btn {
+  margin-bottom: 12px;
+}
+.header-container > .header-text > p {
+  font-size: 70%;
+  width: 90%;
+  margin: 0 auto 50px auto;
+}
+/* Secciones ------ */
+section {
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #DDDDDD !important;
+}
+section > .section-container {
+  overflow: auto;
+}
+section > .section-container h3 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 115% !important;
+  color: #333333 !important;
+}
+section > .section-container p {
+  display: inline-block !important;
+  margin: 0 auto 15px auto;
+  font-size: 70%;
+  width: 60%;
+}
+section:nth-of-type(1) > .section-container img.people {
+  margin: 0px auto 0px auto !important;
+  width: 30%;
+}
+section:nth-of-type(2) {
+  background-color: #FAFAFA;
+}
+section:nth-of-type(2) > .section-container p:last-of-type {
+  margin-bottom: 60px !important;
+}
+section:nth-of-type(3) > .section-container > .row {
+  width: 60%;
+  margin: 40px auto 0px auto !important;
+}
+section:nth-of-type(3) > .section-container > .row > div {
+  text-align: left;
+  margin-bottom: 30px;
+}
+section:nth-of-type(3) > .section-container > .row > div > h4 {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 100% !important;
+  color: #111111 !important;
+  margin-bottom: 30px;
+}
+section:nth-of-type(3) > .section-container > .row > div > p {
+  width: 100% !important;
+}
+section:nth-of-type(3) > .section-container > .row > div > strong {
+  font-size: 70% !important;
+}
+section:nth-of-type(3) > .section-container > .row > div > form#fs_suscribe {
+  margin-bottom: 40px;
+}
+section:nth-of-type(3) > .section-container > .row > div > form#fs_suscribe > input,
+section:nth-of-type(3) > .section-container > .row > div > form#fs_suscribe > button {
+  font-size: 70% !important;
+}
+/* Footer ------ */
+footer {
+  background-color: #212121;
+  color: #FFFFFF;
+  font-size: 85% !important;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+footer > div.footer-container > p {
+  text-transform: uppercase;
+}
+/* Generales ------ */
+header .header-container,
+section .section-container,
+footer > div.footer-container {
+  margin: 0px auto 0px auto;
+  width: 1152px;
+}
+.modal h5 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 100%;
+}
+.modal h5 > strong {
+  color: #59B02E;
+}
+.modal .modal-header {
+  padding: 25px !important;
+}
+.modal .modal-header button.close {
+  margin-top: -20px !important;
+}
